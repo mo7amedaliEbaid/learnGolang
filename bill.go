@@ -58,7 +58,7 @@ func (b *bill) updateTip(tip float64) {
 
 
 
-func getInput(prompt string, r *bufio.Reader) (string, error) {
+func getbillInput(prompt string, r *bufio.Reader) (string, error) {
 	fmt.Print(prompt)
 	input, err := r.ReadString('\n')
 
@@ -68,7 +68,7 @@ func getInput(prompt string, r *bufio.Reader) (string, error) {
 func createBill() bill {
 	reader := bufio.NewReader(os.Stdin)
 
-	name, _ := getInput("Create a new bill name: ", reader)
+	name, _ := getbillInput("Create a new bill name: ", reader)
 
 	b := newBill(name)
 	fmt.Println("Created the bill -", b.name)
@@ -79,16 +79,16 @@ func createBill() bill {
 func promptOptions(b bill) {
 	reader := bufio.NewReader(os.Stdin)
 
-	opt, _ := getInput("Choose option (a - add item, s - save bill, t - add tip): ", reader)
+	opt, _ := getbillInput("Choose option (a - add item, s - save bill, t - add tip): ", reader)
 
 	switch opt {
 	case "a":
-		name, _ := getInput("Item name: ", reader)
-		price, _ := getInput("Item price: ", reader)
+		name, _ := getbillInput("Item name: ", reader)
+		price, _ := getbillInput("Item price: ", reader)
 
 		fmt.Println(name, price)
 	case "t":
-		tip, _ := getInput("Enter tip amount ($): ", reader)
+		tip, _ := getbillInput("Enter tip amount ($): ", reader)
 
 		fmt.Println(tip)
 	case "s":
@@ -99,9 +99,9 @@ func promptOptions(b bill) {
 	}
 }
 
-func main() {
+//func main() {
 
-	mybill := createBill()
-	promptOptions(mybill)
+//	mybill := createBill()
+//	promptOptions(mybill)
 
-}
+//}
