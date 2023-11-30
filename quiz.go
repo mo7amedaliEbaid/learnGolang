@@ -42,7 +42,7 @@ func (q *Quiz) RunQuiz() {
 	for i := 0; i < 5; i++ {
 		question := q.Questions[i]
 		fmt.Println(question.QuestionText)
-		userAnswer, _ := getUserInput("Your answer: ", reader)
+		userAnswer, _ := getUserAnswer("Your answer: ", reader)
 
 		// Check if the answer is correct
 		if strings.EqualFold(userAnswer, question.Answer) {
@@ -60,7 +60,7 @@ func (q *Quiz) RunQuiz() {
 }
 
 // getUserInput gets user input from the console
-func getUserInput(prompt string, reader *bufio.Reader) (string, error) {
+func getUserAnswer(prompt string, reader *bufio.Reader) (string, error) {
 	fmt.Print(prompt)
 	input, err := reader.ReadString('\n')
 	if err != nil {
@@ -69,7 +69,7 @@ func getUserInput(prompt string, reader *bufio.Reader) (string, error) {
 	return strings.TrimSpace(input), nil
 }
 
-func main() {
+/* func main() {
 	quiz := NewQuiz()
 	quiz.RunQuiz()
-}
+} */
