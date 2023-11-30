@@ -99,9 +99,13 @@ func promptOptions(b bill) {
 	}
 }
 
-//func main() {
+/*
+func main() {
+	
+	mybill := createBill()
+	promptOptions(mybill)
 
-//	mybill := createBill()
-//	promptOptions(mybill)
+}
+*/
 
-//}
+
