@@ -23,7 +23,7 @@ func drawTriangle(rows int) {
 		fmt.Println()
 	}
 }
-/*
+
 func main() {
 	// Set the number of rows for the triangle
 	rows := 5
@@ -31,4 +31,3 @@ func main() {
 	// Call the function to draw the triangle
 	drawTriangle(rows)
 }
-*/

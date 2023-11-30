@@ -24,10 +24,10 @@ func drawOppositeTriangles(rows int) {
 	}
 }
 
-/* func main() {
+func main() {
 	// Set the number of rows for the triangles
 	rows := 5
 
 	// Call the function to draw the opposite triangles with letters
 	drawOppositeTriangles(rows)
-} */
+}

@@ -7,8 +7,8 @@ Please provide the number of apples allocated to each child.
 
 package main
 
-//import "fmt"
-/*
+import "fmt"
+
 func main() {
 	// Total number of apples
 	totalApples := 100
@@ -27,4 +27,3 @@ func main() {
 		fmt.Println(childApples)
 	}
 }
-*/

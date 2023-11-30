@@ -1,8 +1,8 @@
 package main
 
 import (
-	//"fmt"
-	//"strconv"
+	"fmt"
+	"strconv"
 )
 
 // Quran struct represents the Quran with surahs and their order
@@ -38,7 +38,7 @@ func NewQuran() Quran {
 	return Quran{Surahs: surahs}
 }
 
-/* func main() {
+func main() {
 	quran := NewQuran()
 
 	// Print the number of surahs
@@ -70,4 +70,4 @@ func NewQuran() Quran {
 	}
 
 	fmt.Println("Surah not found for the given order.")
-} */
+}

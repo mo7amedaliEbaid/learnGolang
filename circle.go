@@ -18,7 +18,7 @@ func drawCircle(radius int) {
 		fmt.Println()
 	}
 }
-/*
+
 func main() {
 	// Set the radius of the circle
 	radius := 10
@@ -26,4 +26,3 @@ func main() {
 	// Call the function to draw the circle
 	drawCircle(radius)
 }
-*/

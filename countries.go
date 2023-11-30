@@ -1,6 +1,6 @@
 package main
 
-/* import (
+import (
 	"bufio"
 	"fmt"
 	"os"
@@ -62,4 +62,3 @@ func getUserInput(prompt string, reader *bufio.Reader) string {
 	input, _ := reader.ReadString('\n')
 	return strings.TrimSpace(strings.ToLower(input))
 }
- */

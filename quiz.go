@@ -69,7 +69,7 @@ func getUserAnswer(prompt string, reader *bufio.Reader) (string, error) {
 	return strings.TrimSpace(input), nil
 }
 
-/* func main() {
+func main() {
 	quiz := NewQuiz()
 	quiz.RunQuiz()
-} */
+}

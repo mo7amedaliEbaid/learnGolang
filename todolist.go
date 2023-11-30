@@ -1,6 +1,6 @@
 package main
 
-/* import (
+import (
 	"bufio"
 	"fmt"
 	"os"
@@ -68,9 +68,9 @@ func getUserInput(prompt string, reader *bufio.Reader) (string, error) {
 		return "", err
 	}
 	return strings.TrimSpace(input), nil
-} */
+}
 
-/* func main() {
+func main() {
 	todoList := TodoList{}
 	reader := bufio.NewReader(os.Stdin)
 
@@ -123,4 +123,3 @@ func getUserInput(prompt string, reader *bufio.Reader) (string, error) {
 		}
 	}
 }
- */

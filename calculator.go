@@ -11,7 +11,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-//	"os"
+	"os"
 	"strconv"
 	"strings"
 )
@@ -58,7 +58,7 @@ func divide(x, y float64) float64 {
 	}
 	return x / y
 }
-/*
+
 func main() {
 	// Setting up a reader to read input from the console
 	reader := bufio.NewReader(os.Stdin)
@@ -126,4 +126,3 @@ func main() {
 		}
 	}
 }
-*/

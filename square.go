@@ -10,7 +10,7 @@ func drawSquare(size int) {
 		fmt.Println()
 	}
 }
-/*
+
 func main() {
 	// Set the size of the square
 	size := 5
@@ -18,4 +18,3 @@ func main() {
 	// Call the function to draw the square
 	drawSquare(size)
 }
-*/
