@@ -46,7 +46,8 @@ func (q *Quiz) RunQuiz() {
 
 		// Check if the answer is correct
 		if strings.EqualFold(userAnswer, question.Answer) {
-			fmt.Println("Correct!\n")
+			fmt.Println("Correct!")
+            fmt.Println()
 			// Increment the score
 			q.Score += 20
 		} else {
